@@ -4,6 +4,6 @@
 -----
 View Presentation : [Hear-It](https://www.canva.com/design/DAEcTag_NW0/68PGroargHx8x4-tkadg_Q/view?utm_content=DAEcTag_NW0&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton)
 
-   ![Face](HearIt/assets/images/face1.png)
+   ![Face](/assets/images/face1.png)
 
 -----
