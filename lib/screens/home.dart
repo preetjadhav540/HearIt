@@ -3,12 +3,12 @@ import 'package:lottie/lottie.dart';
 import 'package:flutter/services.dart';
 import 'package:hearit/app.dart';
 
-class Home extends StatefulWidget{
-  const Home({ key }) : super(key: key);
+class Home extends StatefulWidget {
+  const Home({key}) : super(key: key);
   _HomeState createState() => _HomeState();
 }
 
-class _HomeState extends State<Home>{
+class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
@@ -26,15 +26,19 @@ class _HomeState extends State<Home>{
         backgroundColor: Colors.white,
         elevation: 2,
       ),
-      body: Column(
-        mainAxisSize: MainAxisSize.max,
+      body: ListView(
+        scrollDirection: Axis.vertical,
         children: [
           SizedBox(
             height: 32,
           ),
           Padding(
             padding: EdgeInsets.all(16.0),
-            child: Center(child: Text('Welcome', style: TextStyle(fontFamily: 'Roboto', fontSize: 40),)),
+            child: Center(
+                child: Text(
+              'Welcome',
+              style: TextStyle(fontFamily: 'Roboto', fontSize: 40),
+            )),
           ),
           SizedBox(
             height: 32,
@@ -58,8 +62,7 @@ class _HomeState extends State<Home>{
                   height: 160,
                   minWidth: 120,
                   shape: RoundedRectangleBorder(
-                      borderRadius: new BorderRadius.circular(32.0)
-                  ),
+                      borderRadius: new BorderRadius.circular(32.0)),
                   child: RaisedButton(
                     onPressed: () {
                       Navigator.pushReplacementNamed(context, ArRoute);
@@ -84,8 +87,7 @@ class _HomeState extends State<Home>{
                     height: 160,
                     minWidth: 120,
                     shape: RoundedRectangleBorder(
-                        borderRadius: new BorderRadius.circular(32.0)
-                    ),
+                        borderRadius: new BorderRadius.circular(32.0)),
                     child: RaisedButton(
                       onPressed: () {
                         Navigator.pushReplacementNamed(context, LensRoute);
@@ -99,11 +101,10 @@ class _HomeState extends State<Home>{
                         width: 80,
                         fit: BoxFit.contain,
                       ),
-                    )
-                ),
+                    )),
               ),
             ],
-          )
+          ),
         ],
       ),
     );
