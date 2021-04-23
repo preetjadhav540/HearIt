@@ -129,7 +129,7 @@ class Intro extends StatelessWidget{
             child: Container(
               height: 240,
               child: Image.asset(
-                'assets/images/celebrate.png',
+                'assets/images/celebration.png',
                 fit: BoxFit.contain,
               ),
             ),
